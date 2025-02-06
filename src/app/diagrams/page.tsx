@@ -7,7 +7,6 @@ import Link from "next/link";
 const page = () => {
   return (
     <>
-      <div className="w-[200px] h-[100px] bg-black" />
       <div className="grid px-2.5 md:px-0 grid-cols-3 sm:grid-cols-3 md:grid-cols-4 gap-2.5">
         {diagramList.map((diagram) => (
           <div
