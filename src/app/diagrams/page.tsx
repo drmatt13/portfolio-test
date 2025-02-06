@@ -10,23 +10,25 @@ const page = () => {
       <div className="grid px-2.5 md:px-0 grid-cols-3 sm:grid-cols-3 md:grid-cols-4 gap-2.5">
         {diagramList.map((diagram) => (
           <div
-            key={diagram}
+            key={diagram.fileName}
             className="border border-black/25 aspect-video overflow-hidden shadow rounded-sm cursor-pointer hover:border-blue-400 hover:shadow-lg hover:shadow-blue-500/25 transition-colors hover:ease-out ease-in hover:duration-0"
           >
             <Link
-              href={`/diagrams/fullsize/${diagram}`}
+              href={`/diagrams/fullsize/${diagram.fileName}`}
               passHref
-              className="w-full rounded-md overflow-hidden"
+              className="h-full w-full"
               target="_blank"
             >
-              <Image
-                className="object-cover h-full"
-                src={`/diagrams/thumbnail/${diagram}`}
-                alt={diagram}
-                width={400}
-                height={200}
-                blurDataURL={`/diagrams/blur/${diagram}`}
-              />
+              <div className="h-full w-full bg-white">
+                <Image
+                  className={`${diagram.objectFit} h-full w-full`}
+                  src={`/diagrams/thumbnail/${diagram.fileName}`}
+                  alt={diagram.fileName}
+                  width={200}
+                  height={100}
+                  // blurDataURL={`/diagrams/blur/${diagram}`}
+                />
+              </div>
             </Link>
           </div>
         ))}
