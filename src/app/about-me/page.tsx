@@ -19,10 +19,10 @@ const page = () => {
             decision to leave university and enter the workforce, taking a
             position in Local 25 as a CDL truck driver and aircraft refueler—
             <span className="italic">a job I genuinely enjoyed</span>. I
-            dedicated several years to this role, but I remained committed to
-            earning my degree. Determined to build a career in technology, I
-            eventually left the union to return to school, balancing full-time
-            coursework while raising my newborn son.
+            dedicated several years to this role, yet I always remained
+            committed to earning my degree. Determined to build a career in
+            technology, I eventually left the union to return to school,
+            balancing full-time coursework while raising my newborn son.
           </p>
           <p className="mt-2.5">
             After graduating, I faced a highly competitive job market. Rather
@@ -100,10 +100,10 @@ const page = () => {
               taking a position in Local 25 as a CDL truck driver and aircraft
               refueler—
               <span className="italic">a job I genuinely enjoyed</span>. I
-              dedicated several years to this role, but I remained committed to
-              earning my degree. Determined to build a career in technology, I
-              eventually left the union to return to school, balancing full-time
-              coursework while raising my newborn son.
+              dedicated several years to this role, yet I always remained
+              committed to earning my degree. Determined to build a career in
+              technology, I eventually left the union to return to school,
+              balancing full-time coursework while raising my newborn son.
             </p>
             <p className="mt-2.5">
               After graduating, I faced a highly competitive job market. Rather
