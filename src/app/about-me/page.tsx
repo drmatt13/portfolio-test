@@ -6,7 +6,7 @@ const page = () => {
   return (
     <>
       <div className="w-full flex flex-col items-center ">
-        <div className="hidden sm:flex w-full max-w-[92.5vw] border border-black/25 bg-white/75 p-2.5 flex-col rounded-md text-xs">
+        <div className="hidden sm:flex w-full max-w-[92.5vw] border border-black/25 bg-white/80 p-2.5 flex-col rounded-md text-xs">
           <p>Hi, I'm Matthew.</p>
           <p className="mt-2.5">
             Based in Boston, MA, I'm a serverless developer passionate about
@@ -51,7 +51,7 @@ const page = () => {
         <div className="max-w-[92.5vw] sm:mt-8 flex flex-col sm:grid sm:grid-cols-[auto_1fr] gap-[3vw] sm:gap-8">
           <div className="flex sm:flex-col rounded-lg justify-between gap-[3vw] sm:gap-8 sm:w-[25vw] md:w-52 md:max-w-[25vw] /bg-black">
             {/* images */}
-            <div className="w-full flex-1 bg-white/75 border rounded-lg overflow-hidden relative aspect-square sm:aspect-auto">
+            <div className="w-full flex-1 bg-white/80 border rounded-lg overflow-hidden relative aspect-square sm:aspect-auto">
               <div className="absolute top-0 left-0 h-full w-full">
                 <Image
                   className="rounded-lg flex-1 h-full w-52 object-cover object-top"
