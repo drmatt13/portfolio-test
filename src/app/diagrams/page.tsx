@@ -23,8 +23,8 @@ const page = () => {
                 className="object-cover h-full"
                 src={`/diagram/${diagram}`}
                 alt={diagram}
-                width={600}
-                height={600}
+                width={400}
+                height={200}
               />
             </Link>
           </div>
