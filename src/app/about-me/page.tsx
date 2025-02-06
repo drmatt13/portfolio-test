@@ -5,7 +5,7 @@ import Image from "next/image";
 const page = () => {
   return (
     <>
-      <div className="w-full flex flex-col items-center">
+      <div className="w-full flex flex-col items-center ">
         <div className="hidden sm:flex w-full max-w-[92.5vw] border border-black/25 bg-white/75 p-2.5 flex-col rounded-md text-xs">
           <p>Hi, I'm Matthew.</p>
           <p className="mt-2.5">
@@ -16,20 +16,22 @@ const page = () => {
           </p>
           <p className="mt-2.5">
             Due to immense family and financial challenges, I made the difficult
-            decision to leave university and enter the workforce, taking on a
-            role in Local 25 as a CDL truck driver and aircraft refueler—
-            <span className="italic">a job I genuinely enjoyed</span>. However,
-            I remained committed to earning my degree. Determined to build a
-            career in technology, I eventually left my job to return to school,
-            balancing full-time coursework while raising my newborn son.
+            decision to leave university and enter the workforce, taking a
+            position in Local 25 as a CDL truck driver and aircraft refueler—
+            <span className="italic">a job I genuinely enjoyed</span>. I
+            dedicated several years to this role, but I remained committed to
+            earning my degree. Determined to build a career in technology, I
+            eventually left the union to return to school, balancing full-time
+            coursework while raising my newborn son.
           </p>
           <p className="mt-2.5">
             After graduating, I faced a highly competitive job market. Rather
-            than rushing into any opportunity, I focused on strengthening my
-            skills, earning multiple AWS certifications while deepening my
-            expertise in full-stack development and cloud computing. Managing
-            the demands of education, career growth, and fatherhood has
-            reinforced my discipline, adaptability, and resilience.
+            than rushing into any opportunity, I decided to focus on
+            strengthening my skills, earning multiple AWS certifications while
+            deepening my expertise in full-stack development and cloud
+            computing. Managing the demands of education, career growth, and
+            fatherhood has reinforced my discipline, adaptability, and
+            resilience.
           </p>
           <p className="mt-2.5">
             I take pride in my strong work ethic and commitment to continuous
@@ -43,7 +45,7 @@ const page = () => {
           </p>
           <p className="mt-2.5">
             Outside of tech, I enjoy cooking, traveling, studying history, and
-            spending time with my son
+            spending time with my son.
           </p>
         </div>
         <div className="max-w-[92.5vw] sm:mt-8 flex flex-col sm:grid sm:grid-cols-[auto_1fr] gap-[3vw] sm:gap-8">
@@ -95,20 +97,22 @@ const page = () => {
             <p className="mt-2.5">
               Due to immense family and financial challenges, I made the
               difficult decision to leave university and enter the workforce,
-              taking on a role in Local 25 as a CDL truck driver and aircraft
-              refueler—<span className="italic">a job I genuinely enjoyed</span>
-              . However, I remained committed to earning my degree. Determined
-              to build a career in technology, I eventually left my job to
-              return to school, balancing full-time coursework while raising my
-              newborn son.
+              taking a position in Local 25 as a CDL truck driver and aircraft
+              refueler—
+              <span className="italic">a job I genuinely enjoyed</span>. I
+              dedicated several years to this role, but I remained committed to
+              earning my degree. Determined to build a career in technology, I
+              eventually left the union to return to school, balancing full-time
+              coursework while raising my newborn son.
             </p>
             <p className="mt-2.5">
               After graduating, I faced a highly competitive job market. Rather
-              than rushing into any opportunity, I focused on strengthening my
-              skills, earning multiple AWS certifications while deepening my
-              expertise in full-stack development and cloud computing. Managing
-              the demands of education, career growth, and fatherhood has
-              reinforced my discipline, adaptability, and resilience.
+              than rushing into any opportunity, I decided to focus on
+              strengthening my skills, earning multiple AWS certifications while
+              deepening my expertise in full-stack development and cloud
+              computing. Managing the demands of education, career growth, and
+              fatherhood has reinforced my discipline, adaptability, and
+              resilience.
             </p>
             <p className="mt-2.5">
               I take pride in my strong work ethic and commitment to continuous
@@ -122,7 +126,7 @@ const page = () => {
             </p>
             <p className="mt-2.5">
               Outside of tech, I enjoy cooking, traveling, studying history, and
-              spending time with my son
+              spending time with my son.
             </p>
           </div>
           <div>
