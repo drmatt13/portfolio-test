@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 interface ProjectItemProps {
   image: string;
@@ -62,12 +63,14 @@ const ProjectItem = ({
               } w-full max-w-[95vw] flex gap-4 pr-2.5 border rounded-md overflow-hidden`}
             >
               <div className="h-20 md:h-20 aspect-video relative">
-                <img
+                <Image
                   src={`/projects/${image}`}
                   alt={title}
                   className={`${
                     decommissioned ? "/border-red-500/50" : ""
                   } h-20 md:h-20 aspect-video object-cover /border-r`}
+                  height={200}
+                  width={400}
                 />
                 {workInProgress && (
                   <div className="absolute top-0 right-0 z-10 w-full h-full bg-black/50" />

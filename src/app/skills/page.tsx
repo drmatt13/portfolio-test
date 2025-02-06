@@ -21,8 +21,8 @@ const page = () => {
               className="object-cover h-full"
               src={`/skills/${item.image}`}
               alt={item.image}
-              width={700}
-              height={700}
+              width={600}
+              height={300}
               // layout="responsive"
             />
 

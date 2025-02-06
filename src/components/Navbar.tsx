@@ -9,11 +9,12 @@ const Navbar = () => {
 
   return (
     <div className="w-full md:max-w-[92.5vw] md:w-[48rem] h-16 md:h-[6.5rem] flex">
-      <div className="relative w-full md:mt-8 h-10 bg-white/75 md:rounded-lg border-b md:border border-black/25 shadow flex justify-around items-center text-xs overflow-hidden font-mono">
+      <div className="relative w-full md:mt-8 h-10 bg-white/75 md:rounded-lg border-b md:border border-black/25 shadow flex justify-around items-center text-[.7rem] sm:text-xs overflow-hidden font-mono">
         <Link
           href="/projects"
           passHref
           className="w-full h-full overflow-hidden"
+          replace
         >
           <div
             className={`hover:bg-[#e8ddd8] transition-colors hover:ease-out ease-in hover:duration-0 w-full h-full flex justify-center items-center cursor-pointer`}
@@ -21,7 +22,12 @@ const Navbar = () => {
             Projects{pathname === "/projects" && "*"}
           </div>
         </Link>
-        <Link href="/skills" passHref className="w-full h-full overflow-hidden">
+        <Link
+          href="/skills"
+          passHref
+          className="w-full h-full overflow-hidden"
+          replace
+        >
           <div
             className={`hover:bg-[#e8ddd8] transition-colors hover:ease-out ease-in hover:duration-0 w-full h-full flex justify-center items-center cursor-pointer`}
           >
@@ -32,6 +38,7 @@ const Navbar = () => {
           href="/diagrams"
           passHref
           className="w-full h-full overflow-hidden"
+          replace
         >
           <div
             className={`hover:bg-[#e8ddd8] transition-colors hover:ease-out ease-in hover:duration-0 w-full h-full flex justify-center items-center cursor-pointer`}
@@ -43,6 +50,7 @@ const Navbar = () => {
           href="/about-me"
           passHref
           className="w-full h-full overflow-hidden"
+          replace
         >
           <div
             className={`hover:bg-[#e8ddd8] transition-colors hover:ease-out ease-in hover:duration-0 w-full h-full flex justify-center items-center cursor-pointer`}
