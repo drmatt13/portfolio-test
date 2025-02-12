@@ -1,11 +1,26 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 
 import Link from "next/link";
 
 const Navbar = () => {
   const pathname = usePathname();
+  const [interactionType, setInteractionType] = useState<"mouse" | "touch">(
+    "mouse"
+  );
+
+  useEffect(() => {
+    const touchHandler = () => {
+      setInteractionType("touch");
+    };
+
+    window.addEventListener("touchstart", touchHandler);
+    return () => {
+      window.removeEventListener("touchstart", touchHandler);
+    };
+  }, []);
 
   return (
     <div className="w-full md:max-w-[92.5vw] md:w-[48rem] h-16 md:h-[6.5rem] flex">
@@ -17,7 +32,11 @@ const Navbar = () => {
           replace
         >
           <div
-            className={`hover:bg-[#e8ddd8] transition-colors hover:ease-out ease-in hover:duration-0 w-full h-full flex justify-center items-center cursor-pointer`}
+            className={`${
+              interactionType === "mouse"
+                ? "hover:bg-[#e8ddd8] hover:ease-out hover:duration-0"
+                : "active:bg-[#e8ddd8] active:ease-out active:duration-0 duration-75"
+            } transition-colors ease-in w-full h-full flex justify-center items-center cursor-pointer`}
           >
             Projects{pathname === "/projects" && "*"}
           </div>
@@ -29,7 +48,11 @@ const Navbar = () => {
           replace
         >
           <div
-            className={`hover:bg-[#e8ddd8] transition-colors hover:ease-out ease-in hover:duration-0 w-full h-full flex justify-center items-center cursor-pointer`}
+            className={`${
+              interactionType === "mouse"
+                ? "hover:bg-[#e8ddd8] hover:ease-out hover:duration-0"
+                : "active:bg-[#e8ddd8] active:ease-out active:duration-0 duration-75"
+            } transition-colors ease-in w-full h-full flex justify-center items-center cursor-pointer`}
           >
             Skills{pathname === "/skills" && "*"}
           </div>
@@ -41,7 +64,11 @@ const Navbar = () => {
           replace
         >
           <div
-            className={`hover:bg-[#e8ddd8] transition-colors hover:ease-out ease-in hover:duration-0 w-full h-full flex justify-center items-center cursor-pointer`}
+            className={`${
+              interactionType === "mouse"
+                ? "hover:bg-[#e8ddd8] hover:ease-out hover:duration-0"
+                : "active:bg-[#e8ddd8] active:ease-out active:duration-0 duration-75"
+            } transition-colors ease-in w-full h-full flex justify-center items-center cursor-pointer`}
           >
             Diagrams{pathname === "/diagrams" && "*"}
           </div>
@@ -53,7 +80,11 @@ const Navbar = () => {
           replace
         >
           <div
-            className={`hover:bg-[#e8ddd8] transition-colors hover:ease-out ease-in hover:duration-0 w-full h-full flex justify-center items-center cursor-pointer`}
+            className={`${
+              interactionType === "mouse"
+                ? "hover:bg-[#e8ddd8] hover:ease-out hover:duration-0"
+                : "active:bg-[#e8ddd8] active:ease-out active:duration-0 duration-75"
+            } transition-colors ease-in w-full h-full flex justify-center items-center cursor-pointer`}
           >
             About Me{pathname === "/about-me" && "*"}
           </div>
@@ -65,10 +96,20 @@ const Navbar = () => {
           className="w-full h-full overflow-hidden"
         >
           <div
-            className={`group hover:bg-[#e8ddd8] transition-colors hover:ease-out ease-in hover:duration-0 w-full h-full flex justify-center items-center cursor-pointer`}
+            className={`group ${
+              interactionType === "mouse"
+                ? "hover:bg-[#e8ddd8] hover:ease-out hover:duration-0"
+                : "active:bg-[#e8ddd8] active:ease-out active:duration-0 duration-75"
+            } transition-colors ease-in w-full h-full flex justify-center items-center cursor-pointer`}
           >
             Contact
-            <div className="absolute right-0 top-0 group-hover:bg-[#e8ddd8] h-full pointer-events-none w-2 transition-colors ease-out group-hover:ease-in group-hover:duration-0"></div>
+            <div
+              className={`${
+                interactionType === "mouse"
+                  ? "group-hover:bg-[#e8ddd8] group-hover:ease-in group-hover:duration-0"
+                  : "group-active:bg-[#e8ddd8] group-active:ease-in group-active:duration-0 duration-75"
+              } absolute right-0 top-0 h-full pointer-events-none w-2 transition-colors ease-out`}
+            />
           </div>
         </Link>
       </div>
