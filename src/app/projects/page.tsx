@@ -10,36 +10,40 @@ const page = () => {
         firstOfType={true}
         url="https://api-limit-throttler.vercel.app"
       />
-      <div>
-        <ProjectItem
-          title="AWS Prerequisite Knowledge Guide"
-          description="The AWS Prerequisite Knowledge Guide is an extensive resource designed to provide a structured, in-depth understanding of key AWS concepts, services, and architectural principles. Originally created as a foundational reference for a serverless architecture project, this guide has grown into a standalone learning resource that comprehensively breaks down AWS infrastructure, networking, and serverless components."
-          image="cropped-aws.png"
-          shift={1}
-          url="https://api-limit-throttler.vercel.app/prerequisite-knowledge"
-        />
-      </div>
-      <div>
-        <ProjectItem
-          title="VPC Access Control Strategies"
-          description="VPC access control is crucial in securing API-driven architectures, especially when routing API Gateway traffic to a public-facing ALB. One major concern is the potential for bypassing API Gateway restrictions by directly accessing the ALB, which can expose APIs to unauthorized usage and service abuse. Various mitigation strategies exist, each with its trade-offs in complexity, cost, and security effectiveness. Removing API Gateway in favor of a custom proxy layer enhances control but adds operational overhead. Implementing mutual TLS (mTLS) at the ALB level ensures only authenticated traffic reaches the backend but introduces management complexity and scaling concerns. Alternatively, leveraging VPC Link to route API Gateway traffic directly to private VPC resources eliminates public exposure while maintaining AWS-native security mechanisms. A cost-benefit analysis reveals that while mTLS is viable for lower data transfer volumes, VPC Link offers better scalability and cost efficiency, making it the preferred solution for high-throughput architectures."
-          image="cropped-bad-actor.png"
-          shift={2}
-          url="https://api-limit-throttler.vercel.app/security-considerations"
-        />
-      </div>
 
+      <ProjectItem
+        title="AWS Prerequisite Knowledge Guide"
+        description="The AWS Prerequisite Knowledge Guide is an extensive resource designed to provide a structured, in-depth understanding of key AWS concepts, services, and architectural principles. Originally created as a foundational reference for a serverless architecture project, this guide has grown into a standalone learning resource that comprehensively breaks down AWS infrastructure, networking, and serverless components."
+        image="cropped-aws.png"
+        shift={1}
+        url="https://api-limit-throttler.vercel.app/prerequisite-knowledge"
+      />
+
+      <ProjectItem
+        title="VPC Access Control Strategies"
+        description="VPC access control is crucial in securing API-driven architectures, especially when routing API Gateway traffic to a public-facing ALB. One major concern is the potential for bypassing API Gateway restrictions by directly accessing the ALB, which can expose APIs to unauthorized usage and service abuse. Various mitigation strategies exist, each with its trade-offs in complexity, cost, and security effectiveness. Removing API Gateway in favor of a custom proxy layer enhances control but adds operational overhead. Implementing mutual TLS (mTLS) at the ALB level ensures only authenticated traffic reaches the backend but introduces management complexity and scaling concerns. Alternatively, leveraging VPC Link to route API Gateway traffic directly to private VPC resources eliminates public exposure while maintaining AWS-native security mechanisms. A cost-benefit analysis reveals that while mTLS is viable for lower data transfer volumes, VPC Link offers better scalability and cost efficiency, making it the preferred solution for high-throughput architectures."
+        image="cropped-bad-actor.png"
+        shift={2}
+        url="https://api-limit-throttler.vercel.app/security-considerations"
+      />
       <ProjectItem
         title="ColorStream Dynamics"
         description="ColorStream Dynamics is a real-time data processing and visualization system built to explore AWS Kinesis Data Streams' architecture, scalability, and operational best practices. This project provides an in-depth examination of Kinesis components such as shards, partition keys, throughput limits, and stream consumption methods, offering a hands-on approach to understanding data streaming at scale. Through interactive animations, users can visualize how data moves through Kinesis, whether via manual polling or Lambda event triggers. The system is deployed using AWS SAM, with a React front end providing real-time feedback on data flow, making complex cloud-based data streaming concepts more accessible and practical."
         image="kinesis.png"
         url="https://kinesis-tutorial.vercel.app"
       />
+
       <ProjectItem
         title="GlobalChat"
         description="GlobalChat is a modern, web-based chat application built for real-time communication and seamless user interaction. Developed with a containerized Next.js front end and a Socket.io-powered back end, it delivers a responsive and scalable messaging platform. The app features instant global and private chat, live notifications, and media sharing, all wrapped in a sleek TailwindCSS-powered UI. Users can personalize their experience with custom avatars and searchable chat history, ensuring continuity across sessions. With Docker integration, GlobalChat maintains consistency across environments, enabling effortless deployment on AWS or local systems. This project showcases advanced software design principles, making it an ideal blueprint for scalable and efficient web applications."
         image="cropped-globalchatdark.png"
         url="https://global-chat-docs.vercel.app"
+      />
+      <ProjectItem
+        title="Massachusetts Code Violations Reporter"
+        description="Massachusetts Code Violations Reporter is a web application that allows users to identify and report code violations tied to specific land parcels and individual properties across the state. Leveraging public property data, the platform enables users to select parcels and specify structures, including apartment units, commercial buildings, and multi-use properties, to highlight potential violations such as unsafe conditions, zoning infractions, or illegal construction. This tech demo serves as a proof of concept showcasing real-time mapping, interactive parcel and property selection, and live search functionality. Built with scalability in mind, it demonstrates how GIS-based reporting tools can enhance municipal oversight and public engagement."
+        image="code-violations-reporter.png"
+        url="https://massachusetts-code-violations-reporter.vercel.app/"
       />
       <ProjectItem
         title="Tailwind UI Design Example"
