@@ -34,7 +34,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased w-full flex justify-center /bg-black/50"`}
       >
-        <div className="w-screen h-lvh overflow-y-scroll flex flex-col items-center">
+        <div className="w-screen h-dvh overflow-y-scroll flex flex-col items-center">
           <div className="w-full flex justify-center">
             <Navbar />
           </div>
