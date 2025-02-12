@@ -12,7 +12,7 @@ const page = () => {
             Based in Boston, MA, I'm a serverless developer passionate about
             learning, problem-solving, and building efficient systems. I'm 4x
             AWS certified and have hands-on experience in software development,
-            cloud infrastructure, and DevOps.
+            cloud infrastructure, data analysis, and DevOps.
           </p>
           <p className="mt-2.5">
             Due to immense family and financial challenges, I made the difficult
