@@ -49,7 +49,7 @@ const page = () => {
           </p>
         </div>
         <div className="max-w-[92.5vw] sm:mt-8 flex flex-col sm:grid sm:grid-cols-[auto_1fr] gap-[3vw] sm:gap-8">
-          <div className="flex sm:flex-col rounded-lg justify-between gap-[3vw] sm:gap-8 sm:w-[25vw] md:w-52 md:max-w-[25vw] /bg-black">
+          <div className="flex sm:flex-col rounded-lg justify-between gap-[3vw] sm:gap-8 sm:w-[25vw] md:w-52 md:max-w-[25vw]">
             {/* images */}
             <div className="w-full flex-1 bg-white/80 border rounded-lg overflow-hidden relative aspect-square sm:aspect-auto">
               <div className="absolute top-0 left-0 h-full w-full">
