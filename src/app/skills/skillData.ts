@@ -51,8 +51,8 @@ I have experience working with Amazon RDS, designing multi-region failover strat
   },
 
   {
-    title: "MySQL",
-    image: "MySQL.jpg",
+    title: "PostgreSQL",
+    image: "postgresql.png",
     description: `
     I have a strong understanding of relational and NoSQL database architectures, allowing me to design scalable, high-performance, and fault-tolerant data solutions. I am proficient in SQL, optimizing queries for efficiency and reducing latency in high-traffic applications. I can structure databases using indexes, partitioning, caching strategies, and normalization techniques, ensuring optimal read and write performance.
 
