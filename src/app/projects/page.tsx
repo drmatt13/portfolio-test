@@ -2,7 +2,7 @@ import ProjectItem from "@/components/ProjectItem";
 
 const page = () => {
   return (
-    <div className="flex flex-col justify-center items-center">
+    <div className="flex flex-col justify-center items-center ">
       <ProjectItem
         title="Tiered API Access Manager"
         description="The Tiered API Access Manager is a fully automated AWS-powered system designed to manage API subscriptions and access tiers with minimal overhead. Built using the AWS SAM framework, it streamlines API key management, usage throttling, and authentication through an integrated infrastructure-as-code approach. This project deploys a scalable backend with API Gateway, Lambda, DynamoDB, and an ALB-backed Auto Scaling Group, ensuring efficient request handling and adaptive scaling. The system enforces subscription-based API access with dynamic rate limiting, automated billing, and real-time monitoring. A React-based frontend provides a user-friendly interface for managing API keys and subscriptions, backed by AWS Cognito for secure authentication. By combining automation with flexibility, this solution enables businesses to monetize APIs while maintaining security, scalability, and reliability."

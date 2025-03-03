@@ -16,7 +16,7 @@ export default [
   },
 
   {
-    title: "IT Networking",
+    title: "Network Engineering",
     image: "network-diagram-example.png",
     description:
       "Amazon Web Services (AWS) is a popular cloud computing platform that provides a wide range of services for building and deploying applications. With my expertise in AWS, I can help you build scalable and secure cloud-based applications that improve the performance of your web applications.",

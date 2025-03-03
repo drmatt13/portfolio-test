@@ -9,6 +9,8 @@ export default [
   },
   { fileName: "complete-tls.drawio.png", objectFit: "object-contain" },
   { fileName: "federation.drawio.png", objectFit: "object-contain" },
+
+  { fileName: "stripe.drawio.png", objectFit: "object-contain" },
   { fileName: "cognito.drawio.png", objectFit: "object-contain" },
   { fileName: "cloudformation-2.drawio.png", objectFit: "object-contain" },
   {

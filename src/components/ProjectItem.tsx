@@ -1,6 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
 
+import ButtonWrapper from "@/components/ButtonWrapper";
+
 interface ProjectItemProps {
   image: string;
   title: string;
@@ -26,7 +28,7 @@ const ProjectItem = ({
     <div
       className={`${
         !firstOfType && "pt-4"
-      } w-full max-w-[92.5vw] flex rounded-md relative`}
+      } w-full max-w-[92.5vw] flex rounded-md relative select-none`}
     >
       {shift && (
         <div className="relative">
@@ -125,16 +127,29 @@ const ProjectItem = ({
           </div>
         )}
       </>
-
-      {workInProgress && (
-        <div className="absolute -bottom-2 sm:-bottom-1.5 -right-1 z-10 bg-green-700 text-white text-xs px-2 py-0.5 cursor-not-allowed">
-          <div>In Development</div>
-        </div>
-      )}
-      {decommissioned && (
-        <div className="absolute -bottom-2 sm:-bottom-1.5 -right-1 z-10 bg-black text-white text-xs px-2 py-0.5 cursor-not-allowed">
-          <div>Decommissioned</div>
-        </div>
+      {!workInProgress && !decommissioned ? (
+        <ButtonWrapper
+          className="rounded-md absolute -bottom-2 sm:-bottom-[.46rem] -right-1 bg-blue-500 backdrop-blur text-xs px-2.5 py-0.5 hover:bg-blue-600 cursor-pointer transition-colors hover:ease-out ease-in hover:duration-0"
+          data={{ title, description }}
+        >
+          <div className="italic font-mono text-white">Expand Description</div>
+        </ButtonWrapper>
+      ) : workInProgress ? (
+        <ButtonWrapper
+          className="rounded-md absolute -bottom-2 sm:-bottom-[.46rem] -right-1 bg-green-700 text-xs px-2.5 py-0.5 cursor-not-allowed"
+          disabled={true}
+        >
+          <div className="italic font-mono text-white">In Development</div>
+        </ButtonWrapper>
+      ) : (
+        decommissioned && (
+          <ButtonWrapper
+            className="rounded-md absolute -bottom-2 sm:-bottom-[.46rem] -right-1 bg-black text-xs px-2.5 py-0.5 cursor-not-allowed"
+            disabled={true}
+          >
+            <div className="italic font-mono text-white">Decommissioned</div>
+          </ButtonWrapper>
+        )
       )}
     </div>
   );

@@ -2,7 +2,9 @@
 
 import diagramList from "./diagramList";
 import Image from "next/image";
-import Link from "next/link";
+// import Link from "next/link";
+
+import ButtonWrapper from "@/components/ButtonWrapper";
 
 const page = () => {
   return (
@@ -13,23 +15,28 @@ const page = () => {
             key={diagram.fileName}
             className="border border-black/25 aspect-video overflow-hidden shadow rounded-sm cursor-pointer hover:border-blue-400 hover:shadow-lg hover:shadow-blue-500/25 transition-colors hover:ease-out ease-in hover:duration-0"
           >
-            <Link
+            {/* <Link
               href={`/diagrams/fullsize/${diagram.fileName}`}
               passHref
               className="h-full w-full"
               target="_blank"
+            > */}
+            {/* <div className="h-full w-full bg-white"> */}
+            <ButtonWrapper
+              className="h-full w-full bg-white"
+              data={{ image: diagram.fileName }}
             >
-              <div className="h-full w-full bg-white">
-                <Image
-                  className={`${diagram.objectFit} h-full w-full`}
-                  src={`/diagrams/thumbnail/${diagram.fileName}`}
-                  alt={diagram.fileName}
-                  width={200}
-                  height={100}
-                  // blurDataURL={`/diagrams/blur/${diagram}`}
-                />
-              </div>
-            </Link>
+              <Image
+                className={`${diagram.objectFit} h-full w-full`}
+                src={`/diagrams/thumbnail/${diagram.fileName}`}
+                alt={diagram.fileName}
+                width={200}
+                height={100}
+                blurDataURL={`/diagrams/blur/${diagram}`}
+              />
+            </ButtonWrapper>
+            {/* </div> */}
+            {/* </Link> */}
           </div>
         ))}
       </div>
