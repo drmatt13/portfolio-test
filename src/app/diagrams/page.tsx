@@ -23,7 +23,8 @@ const page = () => {
                   diagramImports[
                     diagram.fileName as keyof typeof diagramImports
                   ],
-                alt: `/diagrams/blur/${diagram.fileName}`,
+                blurDataURL: diagram.blurDataURL,
+                imageKey: diagram.fileName,
               }}
             >
               <Image
@@ -32,7 +33,7 @@ const page = () => {
                 alt={diagram.fileName}
                 width={200}
                 height={100}
-                blurDataURL={`/diagrams/blur/${diagram.fileName}`}
+                blurDataURL={diagram.blurDataURL}
               />
             </ButtonWrapper>
           </div>

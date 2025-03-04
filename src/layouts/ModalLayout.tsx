@@ -17,7 +17,8 @@ const ModalLayout = ({ children }: ModalLayoutProps) => {
     title?: string;
     description?: string;
     image?: StaticImageData;
-    alt?: string;
+    blurDataURL?: string;
+    imageKey?: string;
   }>({});
 
   const timeOutRef = useRef<NodeJS.Timeout | undefined>(undefined);
@@ -82,7 +83,7 @@ const ModalLayout = ({ children }: ModalLayoutProps) => {
               {data.description}
             </div>
           )}
-          {data.image && (
+          {data.image && data.imageKey && data.blurDataURL && (
             <div
               className="relative /overflow-hidden flex justify-center items-center"
               style={{
@@ -101,9 +102,9 @@ const ModalLayout = ({ children }: ModalLayoutProps) => {
                   maxHeight: "100%",
                 }}
                 src={data.image}
-                alt={data.alt || ""}
+                alt={data.imageKey}
                 placeholder="blur"
-                blurDataURL={data.alt}
+                blurDataURL={data.blurDataURL}
               />
             </div>
           )}

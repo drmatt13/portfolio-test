@@ -9,14 +9,16 @@ interface ModalContextType {
     title?: string;
     description?: string;
     image?: StaticImageData;
-    alt?: string;
+    imageKey?: string;
+    blurDataURL?: string;
   };
   setData: Dispatch<
     SetStateAction<{
       title?: string;
       description?: string;
       image?: StaticImageData;
-      alt?: string;
+      imageKey?: string;
+      blurDataURL?: string;
     }>
   >;
 }
@@ -29,7 +31,8 @@ const ModalContext = createContext<ModalContextType>({
     title: undefined,
     description: undefined,
     image: undefined,
-    alt: undefined,
+    imageKey: undefined,
+    blurDataURL: undefined,
   },
   setData: () => {},
 });

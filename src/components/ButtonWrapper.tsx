@@ -14,7 +14,8 @@ interface Props {
     title?: string;
     description?: string;
     image?: StaticImageData;
-    alt?: string;
+    imageKey?: string;
+    blurDataURL?: string;
   };
 }
 
@@ -22,7 +23,13 @@ const ButtonWrapper = ({
   children,
   className,
   disabled = false,
-  data = { title: "", description: "", image: undefined, alt: "" },
+  data = {
+    title: "",
+    description: "",
+    image: undefined,
+    blurDataURL: "",
+    imageKey: "",
+  },
 }: Props) => {
   const { openModal, isOpen, setData } = useContext(modalContext);
 
