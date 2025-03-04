@@ -104,7 +104,10 @@ const ModalLayout = ({ children }: ModalLayoutProps) => {
                 src={data.image}
                 alt={data.imageKey}
                 placeholder="blur"
-                blurDataURL={data.blurDataURL}
+                blurDataURL={
+                  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg=="
+                }
+                loading="lazy"
               />
             </div>
           )}

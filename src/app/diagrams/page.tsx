@@ -33,7 +33,11 @@ const page = () => {
                 alt={diagram.fileName}
                 width={200}
                 height={100}
-                blurDataURL={diagram.blurDataURL}
+                blurDataURL={
+                  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg=="
+                }
+                placeholder="blur"
+                loading="lazy"
               />
             </ButtonWrapper>
           </div>
