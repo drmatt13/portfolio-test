@@ -11,6 +11,8 @@ interface ModalContextType {
     image?: StaticImageData;
     imageKey?: string;
     blurDataURL?: string;
+    imageHeight?: number;
+    imageWidth?: number;
   };
   setData: Dispatch<
     SetStateAction<{
@@ -19,6 +21,8 @@ interface ModalContextType {
       image?: StaticImageData;
       imageKey?: string;
       blurDataURL?: string;
+      imageHeight?: number;
+      imageWidth?: number;
     }>
   >;
 }

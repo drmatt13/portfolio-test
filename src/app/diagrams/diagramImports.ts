@@ -126,6 +126,7 @@ import vpc2 from "../../../public/diagrams/fullsize/vpc-2.drawio.png";
 import vpcArchitecture from "../../../public/diagrams/fullsize/vpc-architecture.drawio.png";
 import vpclink from "../../../public/diagrams/fullsize/vpclink.drawio.png";
 import Webhook from "../../../public/diagrams/fullsize/Webhook.drawio.png";
+import LambdaLayers from "../../../public/diagrams/fullsize/lambda-layers.drawio.png";
 
 export default {
   "API Access Rate Architect Full-Stack IaC - fix.drawio.png":
@@ -257,4 +258,5 @@ export default {
   "vpc-architecture.drawio.png": vpcArchitecture,
   "vpclink.drawio.png": vpclink,
   "Webhook.drawio.png": Webhook,
+  "lambda-layers.drawio.png": LambdaLayers,
 };

@@ -19,6 +19,8 @@ const ModalLayout = ({ children }: ModalLayoutProps) => {
     image?: StaticImageData;
     blurDataURL?: string;
     imageKey?: string;
+    imageHeight?: number;
+    imageWidth?: number;
   }>({});
 
   const timeOutRef = useRef<NodeJS.Timeout | undefined>(undefined);
@@ -34,11 +36,11 @@ const ModalLayout = ({ children }: ModalLayoutProps) => {
       <div
         className={`${
           isOpen ? "pointer-events-auto" : "pointer-events-none"
-        } absolute top-0 left-0 w-full h-dvh bg-black/50 /backdrop-blur flex justify-center items-center`}
+        } absolute top-0 left-0 w-full h-dvh bg-black/50 backdrop-blur flex justify-center items-center select-none`}
         style={{
           zIndex: 20,
           opacity: isOpen ? 1 : 0,
-          // transition: "opacity 0.25s",
+          transition: "opacity 0.25s",
         }}
         onClick={() => {
           closeModal();
@@ -49,8 +51,8 @@ const ModalLayout = ({ children }: ModalLayoutProps) => {
       >
         <div
           className={`${
-            data.description && "/backdrop-blur rounded-lg"
-          } border-black/25 overflow-hidden`}
+            data.description && "backdrop-blur rounded-lg"
+          } border-black/25 /overflow-hidden`}
           style={{
             maxWidth: "90vw",
             height: "max-content",
@@ -85,7 +87,7 @@ const ModalLayout = ({ children }: ModalLayoutProps) => {
           )}
           {data.imageKey && data.blurDataURL && (
             <div
-              className="relative /overflow-hidden flex justify-center items-center"
+              className="relative /overflow-hidden"
               style={{
                 width: "90vw",
                 height: "90vh",
@@ -93,21 +95,23 @@ const ModalLayout = ({ children }: ModalLayoutProps) => {
             >
               <Image
                 onClick={(e) => e.stopPropagation()}
-                className="rounded-lg"
                 style={{
                   objectFit: "contain",
                   maxWidth: "100%",
                   maxHeight: "100%",
+                  boxShadow: "0 0.2rem 1rem 0.1rem #0008",
                 }}
-                width={500}
-                height={500}
+                width={data.imageWidth}
+                height={data.imageHeight}
                 src={data.image as any}
                 alt={data.imageKey}
                 placeholder="blur"
-                blurDataURL={
-                  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg=="
-                }
-                // loading="lazy"
+                blurDataURL={data.blurDataURL as string}
+                sizes="(max-width: 640px) 90vw,
+                  (max-width: 1024px) 90vw,
+                  (max-width: 1280px) 90vw,
+                  (max-width: 1536px) 90vw,
+                  1800px"
               />
             </div>
           )}
