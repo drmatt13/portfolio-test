@@ -83,7 +83,7 @@ const ModalLayout = ({ children }: ModalLayoutProps) => {
               {data.description}
             </div>
           )}
-          {data.image && data.imageKey && data.blurDataURL && (
+          {data.imageKey && data.blurDataURL && (
             <div
               className="relative /overflow-hidden flex justify-center items-center"
               style={{
@@ -96,12 +96,12 @@ const ModalLayout = ({ children }: ModalLayoutProps) => {
                 className="rounded-lg"
                 style={{
                   objectFit: "contain",
-                  height: "auto",
-                  width: "auto",
                   maxWidth: "100%",
                   maxHeight: "100%",
                 }}
-                src={data.image}
+                width={500}
+                height={500}
+                src={data.image as any}
                 alt={data.imageKey}
                 placeholder="blur"
                 blurDataURL={
