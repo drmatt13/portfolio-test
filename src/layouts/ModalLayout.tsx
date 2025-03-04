@@ -34,11 +34,11 @@ const ModalLayout = ({ children }: ModalLayoutProps) => {
       <div
         className={`${
           isOpen ? "pointer-events-auto" : "pointer-events-none"
-        } absolute top-0 left-0 w-full h-dvh bg-black/50 backdrop-blur flex justify-center items-center`}
+        } absolute top-0 left-0 w-full h-dvh bg-black/50 /backdrop-blur flex justify-center items-center`}
         style={{
           zIndex: 20,
           opacity: isOpen ? 1 : 0,
-          transition: "opacity 0.25s",
+          // transition: "opacity 0.25s",
         }}
         onClick={() => {
           closeModal();
@@ -49,7 +49,7 @@ const ModalLayout = ({ children }: ModalLayoutProps) => {
       >
         <div
           className={`${
-            data.description && "backdrop-blur rounded-lg"
+            data.description && "/backdrop-blur rounded-lg"
           } border-black/25 overflow-hidden`}
           style={{
             maxWidth: "90vw",
@@ -107,7 +107,7 @@ const ModalLayout = ({ children }: ModalLayoutProps) => {
                 blurDataURL={
                   "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg=="
                 }
-                loading="lazy"
+                // loading="lazy"
               />
             </div>
           )}
