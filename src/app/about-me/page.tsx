@@ -54,33 +54,36 @@ const page = () => {
             <div className="w-full flex-1 bg-white/80 border rounded-lg overflow-hidden relative aspect-square sm:aspect-auto">
               <div className="absolute top-0 left-0 h-full w-full">
                 <Image
-                  className="rounded-lg flex-1 h-full w-52 object-cover object-top"
+                  className="select-none rounded-lg flex-1 h-full w-52 object-cover object-top"
                   src="/about-me/headshot2.png"
                   alt="Matthew Sweeney"
                   width={1000}
                   height={1000}
+                  draggable="false"
                 />
               </div>
             </div>
             <div className="w-full flex-1 bg-white/75 border rounded-lg overflow-hidden relative aspect-square sm:aspect-auto">
               <div className="absolute top-0 left-0 h-full w-full">
                 <Image
-                  className="h-full w-full object-cover"
+                  className="select-none h-full w-full object-cover"
                   src="/about-me/tree1.png"
                   alt="Matthew Sweeney"
                   width={1000}
                   height={1000}
+                  draggable="false"
                 />
               </div>
             </div>
             <div className="w-full flex-1 bg-white/75 border rounded-lg overflow-hidden relative aspect-square sm:aspect-auto">
               <div className="absolute top-0 left-0 h-full w-full">
                 <Image
-                  className="h-full w-full object-cover"
+                  className="select-none h-full w-full object-cover"
                   src="/about-me/IMG_20211224_225001_898.jpg"
                   alt="Matthew Sweeney"
                   width={1000}
                   height={1000}
+                  draggable="false"
                 />
               </div>
             </div>
@@ -134,7 +137,7 @@ const page = () => {
               onClick={() => {
                 window.open("/about-me/resume_v4.pdf", "_blank");
               }}
-              className="h-full w-full object-cover border border-black/25 rounded-md cursor-pointer"
+              className="select-none h-full w-full object-cover border border-black/25 rounded-md cursor-pointer"
               src="/about-me/resume.png"
               alt="resume"
             />

@@ -23,7 +23,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="w-full md:max-w-[92.5vw] md:w-[48rem] h-16 md:h-[6.5rem] flex">
+    <div className="w-full md:max-w-[92.5vw] md:w-[48rem] h-16 md:h-[6.5rem] flex select-none">
       <div className="relative w-full md:mt-8 h-10 bg-white/75 md:rounded-lg border-b md:border border-black/25 shadow flex justify-around items-center text-[.7rem] sm:text-xs overflow-hidden font-mono">
         <Link
           href="/projects"

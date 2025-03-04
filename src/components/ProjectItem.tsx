@@ -73,6 +73,7 @@ const ProjectItem = ({
                   } h-20 md:h-20 aspect-video object-cover /border-r`}
                   height={200}
                   width={400}
+                  draggable="false"
                 />
                 {workInProgress && (
                   <div className="absolute top-0 right-0 z-10 w-full h-full bg-black/50" />

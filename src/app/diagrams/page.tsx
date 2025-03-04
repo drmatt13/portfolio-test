@@ -15,7 +15,7 @@ const page = () => {
         {diagramList.map((diagram) => (
           <div
             key={diagram.fileName}
-            className="border border-black/25 aspect-video overflow-hidden shadow rounded-sm cursor-pointer hover:border-blue-400 hover:shadow-lg hover:shadow-blue-500/25 transition-colors hover:ease-out ease-in hover:duration-0"
+            className="border border-black/25 aspect-video overflow-hidden shadow rounded-sm cursor-pointer hover:border-blue-400 hover:shadow-lg hover:shadow-blue-500/25 transition-colors hover:ease-out ease-in hover:duration-0 bg-white select-none"
           >
             <Link
               href={`/diagrams/fullsize/${diagram.fileName}`}
@@ -45,6 +45,7 @@ const page = () => {
                 blurDataURL={diagram.blurDataURL}
                 placeholder="blur"
                 loading="lazy"
+                draggable="false"
               />
               {/* </ButtonWrapper> */}
             </Link>

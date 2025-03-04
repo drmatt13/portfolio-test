@@ -13,7 +13,7 @@ const page = () => {
         {skillData.map((item) => (
           <div
             key={item.title}
-            className="border border-black/25 aspect-video overflow-hidden shadow rounded-sm /cursor-pointer "
+            className="border border-black/25 aspect-video overflow-hidden shadow rounded-sm /cursor-pointer select-none"
             data-tooltip-id={item.title}
             data-tooltip-content={item.title}
           >
@@ -24,6 +24,7 @@ const page = () => {
               width={600}
               height={300}
               // layout="responsive"
+              draggable="false"
             />
 
             <Tooltip id={item.title} />

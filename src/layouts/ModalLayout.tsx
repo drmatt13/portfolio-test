@@ -36,7 +36,7 @@ const ModalLayout = ({ children }: ModalLayoutProps) => {
       <div
         className={`${
           isOpen ? "pointer-events-auto" : "pointer-events-none"
-        } absolute top-0 left-0 w-full h-dvh bg-black/50 backdrop-blur flex justify-center items-center select-none`}
+        } absolute top-0 left-0 w-full h-dvh bg-black/50 backdrop-blur flex justify-center items-center`}
         style={{
           zIndex: 20,
           opacity: isOpen ? 1 : 0,
@@ -69,7 +69,7 @@ const ModalLayout = ({ children }: ModalLayoutProps) => {
             <div
               className="font-bold text-base md:text-lg"
               style={{
-                marginBottom: "0.65rem",
+                marginBottom: "0.75rem",
               }}
             >
               {data.title}:
@@ -77,9 +77,9 @@ const ModalLayout = ({ children }: ModalLayoutProps) => {
           )}
           {data.description && (
             <div
-              className="text-sm"
+              className="text-xs"
               style={{
-                lineHeight: "1.6",
+                lineHeight: "1.625",
               }}
             >
               {data.description}
