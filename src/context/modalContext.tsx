@@ -1,3 +1,4 @@
+import { StaticImageData } from "next/image";
 import { createContext, Dispatch, SetStateAction } from "react";
 
 interface ModalContextType {
@@ -7,10 +8,16 @@ interface ModalContextType {
   data: {
     title?: string;
     description?: string;
-    image?: string;
+    image?: StaticImageData;
+    alt?: string;
   };
   setData: Dispatch<
-    SetStateAction<{ title?: string; description?: string; image?: string }>
+    SetStateAction<{
+      title?: string;
+      description?: string;
+      image?: StaticImageData;
+      alt?: string;
+    }>
   >;
 }
 
@@ -22,6 +29,7 @@ const ModalContext = createContext<ModalContextType>({
     title: undefined,
     description: undefined,
     image: undefined,
+    alt: undefined,
   },
   setData: () => {},
 });

@@ -4,6 +4,7 @@ import { useContext } from "react";
 
 // context
 import modalContext from "@/context/modalContext";
+import { StaticImageData } from "next/image";
 
 interface Props {
   children: React.ReactNode;
@@ -12,7 +13,8 @@ interface Props {
   data?: {
     title?: string;
     description?: string;
-    image?: string;
+    image?: StaticImageData;
+    alt?: string;
   };
 }
 
@@ -20,7 +22,7 @@ const ButtonWrapper = ({
   children,
   className,
   disabled = false,
-  data = { title: "", description: "", image: "" },
+  data = { title: "", description: "", image: undefined, alt: "" },
 }: Props) => {
   const { openModal, isOpen, setData } = useContext(modalContext);
 

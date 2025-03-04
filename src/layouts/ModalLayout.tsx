@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useCallback, useEffect, useRef } from "react";
+import Image, { StaticImageData } from "next/image";
 import ModalContext from "@/context/modalContext";
 
 interface ModalLayoutProps {
@@ -15,7 +16,8 @@ const ModalLayout = ({ children }: ModalLayoutProps) => {
   const [data, setData] = useState<{
     title?: string;
     description?: string;
-    image?: string;
+    image?: StaticImageData;
+    alt?: string;
   }>({});
 
   const timeOutRef = useRef<NodeJS.Timeout | undefined>(undefined);
@@ -45,7 +47,9 @@ const ModalLayout = ({ children }: ModalLayoutProps) => {
         }}
       >
         <div
-          className="rounded-lg border-black/25 backdrop-blur overflow-hidden"
+          className={`${
+            data.description && "backdrop-blur rounded-lg"
+          } border-black/25 overflow-hidden`}
           style={{
             maxWidth: "90vw",
             height: "max-content",
@@ -56,7 +60,7 @@ const ModalLayout = ({ children }: ModalLayoutProps) => {
             paddingTop: !data.description ? "" : "1rem",
             paddingBottom: !data.description ? "" : "1rem",
           }}
-          onClick={(e) => e.stopPropagation()}
+          onClick={(e) => data.description && e.stopPropagation()}
         >
           {data.title && (
             <div
@@ -79,22 +83,27 @@ const ModalLayout = ({ children }: ModalLayoutProps) => {
             </div>
           )}
           {data.image && (
-            <div>
-              <img
-                src={`/diagrams/blur/${data.image}`} // Default to low-res image
-                alt={data.image}
-                className="h-full w-full object-cover"
+            <div
+              className="relative /overflow-hidden flex justify-center items-center"
+              style={{
+                width: "90vw",
+                height: "90vh",
+              }}
+            >
+              <Image
+                onClick={(e) => e.stopPropagation()}
+                className="rounded-lg"
                 style={{
-                  maxWidth: "90vw",
-                  maxHeight: "90vh",
+                  objectFit: "contain",
+                  height: "auto",
+                  width: "auto",
+                  maxWidth: "100%",
+                  maxHeight: "100%",
                 }}
-                onLoad={(e) => {
-                  const target = e.currentTarget;
-                  target.src = `/diagrams/fullsize/${data.image}`; // Swap to high-res when loaded
-                }}
-                onError={(e) => {
-                  e.currentTarget.src = `/diagrams/blur/${data.image}`; // Fallback to low-res on error
-                }}
+                src={data.image}
+                alt={data.alt || ""}
+                placeholder="blur"
+                blurDataURL={data.alt}
               />
             </div>
           )}
