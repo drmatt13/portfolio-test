@@ -29,16 +29,6 @@ export default [
   },
 
   {
-    title: "Mathematics & Problem Solving",
-    image: "istockphoto-1265965042-612x612.jpg",
-    description: `My strong foundation in mathematics allows me to approach complex problems with structured, logical solutions. Whether working with animations, advanced CSS transformations, financial modeling, or price comparison analysis, I can manually derive equations and implement precise calculations to achieve optimal performance and accuracy. My ability to analyze problems from first principles enables me to write efficient algorithms, fine-tune numerical precision, and optimize processes in real-world applications.
-
-I excel at problem-solving, breaking down challenges into manageable components, and applying mathematical techniques to achieve practical solutions. Whether debugging unexpected behavior, improving algorithm efficiency, or designing scalable solutions, I rely on pattern recognition, abstraction, and analytical thinking to overcome obstacles. My approach ensures that even the most complex technical problems can be systematically analyzed, solved, and refined, leading to improved performance, cleaner implementations, and more innovative solutions.
-`,
-    objectCover: true,
-  },
-
-  {
     title: "MongoDB",
     image: "mongodb.png",
     description: `
@@ -51,15 +41,23 @@ I have experience working with Amazon RDS, designing multi-region failover strat
   },
 
   {
-    title: "PostgreSQL",
-    image: "postgresql.png",
-    description: `
-    I have a strong understanding of relational and NoSQL database architectures, allowing me to design scalable, high-performance, and fault-tolerant data solutions. I am proficient in SQL, optimizing queries for efficiency and reducing latency in high-traffic applications. I can structure databases using indexes, partitioning, caching strategies, and normalization techniques, ensuring optimal read and write performance.
+    title: "Mathematics & Problem Solving",
+    image: "istockphoto-1265965042-612x612.jpg",
+    description: `My strong foundation in mathematics allows me to approach complex problems with structured, logical solutions. Whether working with animations, advanced CSS transformations, financial modeling, or price comparison analysis, I can manually derive equations and implement precise calculations to achieve optimal performance and accuracy. My ability to analyze problems from first principles enables me to write efficient algorithms, fine-tune numerical precision, and optimize processes in real-world applications.
 
-I have experience working with Amazon RDS, designing multi-region failover strategies, cross-region replication, and high-availability configurations to ensure fault tolerance and disaster recovery. Additionally, I can work with MongoDB and DynamoDB, understanding when to choose relational vs. NoSQL solutions based on data access patterns, scalability requirements, and consistency models. Whether designing OLTP or OLAP systems, optimizing complex queries, or tuning database performance, I can ensure efficient, resilient, and well-architected data solutions for a variety of workloads.
+I excel at problem-solving, breaking down challenges into manageable components, and applying mathematical techniques to achieve practical solutions. Whether debugging unexpected behavior, improving algorithm efficiency, or designing scalable solutions, I rely on pattern recognition, abstraction, and analytical thinking to overcome obstacles. My approach ensures that even the most complex technical problems can be systematically analyzed, solved, and refined, leading to improved performance, cleaner implementations, and more innovative solutions.
+`,
+    objectCover: true,
+  },
 
+  {
+    title: "Bash Scripting",
+    image: "bash.png",
+    description: `I have a strong understanding of Linux administration, including system configuration, troubleshooting, and automation. I can manage user accounts, permissions, and security policies, using tools like chmod, chown, usermod, and groupadd to enforce system access controls. I can write shell scripts to automate tasks and improve system efficiency.
+    
+    I can configure network settings through files like /etc/resolv.conf, /etc/hosts, and /etc/network/interfaces, ensuring proper DNS resolution and connectivity. I can work with package managers like apt, yum, and dnf for software installation and maintenance. My expertise includes file system management, disk partitioning, and system monitoring, allowing me to diagnose and resolve performance issues. I can also analyze kernel processes, resource allocation, and system logs to troubleshoot failures and optimize operations. Whether managing access controls, fine-tuning system performance, or supporting workloads on AWS EC2, I can ensure secure, stable, and efficient Linux environments.
     `,
-    // objectCover: true,
+    objectCover: true,
   },
 
   {
@@ -74,8 +72,8 @@ I excel at code refactoring and simplification, transforming deeply nested and c
   },
 
   {
-    title: "Database Query Optimization + Tuning",
-    image: "database-1024x703.webp",
+    title: "PostgreSQL",
+    image: "postgresql.png",
     description: `
     I have a strong understanding of relational and NoSQL database architectures, allowing me to design scalable, high-performance, and fault-tolerant data solutions. I am proficient in SQL, optimizing queries for efficiency and reducing latency in high-traffic applications. I can structure databases using indexes, partitioning, caching strategies, and normalization techniques, ensuring optimal read and write performance.
 
@@ -101,26 +99,6 @@ I have experience working with Amazon RDS, designing multi-region failover strat
     description: `I have a strong understanding of data structures and algorithms, enabling me to write efficient, scalable, and optimized code for a wide range of applications. I can analyze time and space complexity to ensure performance efficiency, selecting the right data structures—such as arrays, linked lists, hash tables, trees, graphs, and heaps—to best fit the problem at hand.
 
 I can implement and optimize sorting, searching, graph traversal, and dynamic programming algorithms, ensuring efficient solutions to complex problems. Whether optimizing database queries, designing caching mechanisms, improving load balancing strategies, or structuring data for high-performance applications, I apply algorithmic thinking to enhance performance, reduce computational overhead, and scale systems effectively. My knowledge of recursion, memoization, and concurrency allows me to solve real-world challenges in software development, system design, and large-scale computing.`,
-  },
-
-  {
-    title: "Bash Scripting",
-    image: "bash.png",
-    description: `I have a strong understanding of Linux administration, including system configuration, troubleshooting, and automation. I can manage user accounts, permissions, and security policies, using tools like chmod, chown, usermod, and groupadd to enforce system access controls. I can write shell scripts to automate tasks and improve system efficiency.
-    
-    I can configure network settings through files like /etc/resolv.conf, /etc/hosts, and /etc/network/interfaces, ensuring proper DNS resolution and connectivity. I can work with package managers like apt, yum, and dnf for software installation and maintenance. My expertise includes file system management, disk partitioning, and system monitoring, allowing me to diagnose and resolve performance issues. I can also analyze kernel processes, resource allocation, and system logs to troubleshoot failures and optimize operations. Whether managing access controls, fine-tuning system performance, or supporting workloads on AWS EC2, I can ensure secure, stable, and efficient Linux environments.
-    `,
-    objectCover: true,
-  },
-
-  {
-    title: "JavaScript",
-    image: "What-Is-JavaScript-Used-For.avif",
-    description: `
-    I possess a deep technical mastery of JavaScript and TypeScript, with expertise in low-level language mechanics, asynchronous programming, and scalable architecture patterns. I have a thorough understanding of execution contexts, closures, prototype chains, hoisting, and lexical scope, which allows me to write highly optimized and memory-efficient code. My proficiency in Promises, async/await, and the event loop enables me to manage concurrency effectively, ensuring that applications remain non-blocking and performant.
-
-I excel at code refactoring and simplification, transforming deeply nested and convoluted logic into modular, maintainable, and reusable abstractions. I am skilled in tree shaking, dead code elimination, and module bundling, all of which enhance performance in modern JavaScript ecosystems. My experience encompasses both object-oriented and functional programming paradigms, leveraging ES6+ classes, TypeScript’s advanced type system, and declarative programming patterns to create robust and scalable solutions. Whether I am architecting large-scale applications, optimizing rendering performance in React, or streamlining complex asynchronous workflows, I apply my deep technical expertise and best practices to ensure clean, efficient, and future-proof code.
-`,
     objectCover: true,
   },
   {
@@ -164,6 +142,7 @@ I can optimize styling workflows by using variants, custom themes, and configura
 I design with scalability and responsiveness in mind, utilizing flexible grid systems, fluid typography, and adaptive spacing to create layouts that remain consistent and dynamic under various resolutions and orientations. I also pay close attention to layout shifts, interaction patterns, and performance optimizations, ensuring a smooth, interruption-free user experience. Whether it’s crafting design systems, refining micro-interactions, or implementing accessible UI components, I can create modern, engaging, and highly responsive interfaces that enhance usability without compromising performance.`,
     objectCover: true,
   },
+
   {
     title: "Authentication & Authorization",
     image: "auth.png",
@@ -177,6 +156,26 @@ I am highly proficient in encryption strategies, including symmetric (AES) and a
     objectCover: true,
   },
 
+  {
+    title: "GraphQL",
+    image: "graphql-reasons.png",
+    description: `I have a strong understanding of Linux administration, including system configuration, troubleshooting, and automation. I can manage user accounts, permissions, and security policies, using tools like chmod, chown, usermod, and groupadd to enforce system access controls. I can write shell scripts to automate tasks and improve system efficiency.
+    
+    I can configure network settings through files like /etc/resolv.conf, /etc/hosts, and /etc/network/interfaces, ensuring proper DNS resolution and connectivity. I can work with package managers like apt, yum, and dnf for software installation and maintenance. My expertise includes file system management, disk partitioning, and system monitoring, allowing me to diagnose and resolve performance issues. I can also analyze kernel processes, resource allocation, and system logs to troubleshoot failures and optimize operations. Whether managing access controls, fine-tuning system performance, or supporting workloads on AWS EC2, I can ensure secure, stable, and efficient Linux environments.
+    `,
+    // objectCover: true,
+  },
+  {
+    title: "Database Query Optimization + Tuning",
+    image: "database-1024x703.webp",
+    description: `
+    I have a strong understanding of relational and NoSQL database architectures, allowing me to design scalable, high-performance, and fault-tolerant data solutions. I am proficient in SQL, optimizing queries for efficiency and reducing latency in high-traffic applications. I can structure databases using indexes, partitioning, caching strategies, and normalization techniques, ensuring optimal read and write performance.
+
+I have experience working with Amazon RDS, designing multi-region failover strategies, cross-region replication, and high-availability configurations to ensure fault tolerance and disaster recovery. Additionally, I can work with MongoDB and DynamoDB, understanding when to choose relational vs. NoSQL solutions based on data access patterns, scalability requirements, and consistency models. Whether designing OLTP or OLAP systems, optimizing complex queries, or tuning database performance, I can ensure efficient, resilient, and well-architected data solutions for a variety of workloads.
+
+    `,
+    // objectCover: true,
+  },
   {
     title: "CI/CD & DevOps",
     image: "git-blog-header.png",
