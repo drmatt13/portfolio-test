@@ -4,13 +4,18 @@ const page = () => {
   return (
     <div className="flex flex-col justify-center items-center ">
       <ProjectItem
+        title="AWS SAM WebSocket Development Kit"
+        description="The AWS SAM WebSocket Development Kit is a local testing framework for AWS WebSocket API Gateway integrations using AWS SAM. Since AWS SAM lacks built-in WebSocket testing tools, this project provides a local WebSocket server that mimics API Gateway behavior, enabling real-time execution of Lambda functions without deployment. It ensures seamless synchronization between local and live environments, streamlining the development and debugging process. A built-in frontend tester allows developers to validate WebSocket messages across both local and deployed AWS environments, making WebSocket API development more efficient and iterative."
+        image="sam-websocket-dev-kit.png"
+        url="https://github.com/drmatt13/sam-websocket-dev-kit"
+        firstOfType={true}
+      />
+      <ProjectItem
         title="Tiered API Access Manager"
         description="The Tiered API Access Manager is a fully automated Infrastructure as Code (IaC) solution for managing API subscriptions and access tiers, deployed to AWS via a CloudFormation-based stack. Built with the AWS SAM framework, it utilizes API Gateway, Lambda, DynamoDB, and an ALB-backed Auto Scaling Group to facilitate dynamic request handling and adaptive scaling. The system enforces tiered API access with rate limiting, automated billing, and real-time monitoring. A React-based front end streamlines API key management, while AWS Cognito provides secure authentication. Designed for scalability and efficiency, this project empowers businesses to monetize APIs while ensuring security and operational flexibility."
         image="APIkeyThumbnail.png"
-        firstOfType={true}
         url="https://api-limit-throttler.vercel.app"
       />
-
       <ProjectItem
         title="AWS Prerequisite Knowledge Guide"
         description="The AWS Prerequisite Knowledge Guide was initially developed as part of the Tiered API Access Manager to provide a structured, in-depth exploration of essential AWS concepts, services, and architectural principles crucial for understanding the project's serverless architecture. Over time, it evolved into a standalone resource designed to break down AWS infrastructure, networking, and serverless components in a clear and accessible way. Drawing on my experience as a certified AWS Solutions Architect Professional, this guide condenses the vast AWS ecosystem into a concise yet comprehensive foundation, equipping readers with the knowledge necessary to grasp the architectural decisions behind the project. While tailored to align with the project's technical requirements, it maintains a broader perspective, making it valuable for newcomers and experienced users looking to deepen their understanding of AWS."
@@ -26,6 +31,7 @@ const page = () => {
         shift={2}
         url="https://api-limit-throttler.vercel.app/security-considerations"
       />
+
       <ProjectItem
         title="ColorStream Dynamics"
         description="ColorStream Dynamics is a deep dive into AWS Kinesis Data Streams, combining a structured guide with an interactive real-time data processing system. It covers shard distribution, partition key hashing, throughput constraints, and stream consumption patterns, demonstrating explicit polling and event-driven processing via AWS Lambda triggers. A defining feature is its real-time visualization, where a React-based front end dynamically renders data ingestion and retrieval, allowing users to analyze stream propagation, retrieval latency, and consumer behavior. The system simulates streaming color-encoded records from multiple producers, while a togglable consumer ingests and animates records by color and retrieval order. It persistently tracks shard iterators in DynamoDB, ensuring polling resumes seamlessly after interruptions. This hands-on approach reinforces partitioning, scaling, and data consistency in distributed streaming. The architecture is deployed via CloudFormation, with AWS SAM handling stack generation and automated resource provisioning."
