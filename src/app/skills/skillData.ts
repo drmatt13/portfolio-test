@@ -166,7 +166,7 @@ I am highly proficient in encryption strategies, including symmetric (AES) and a
     // objectCover: true,
   },
   {
-    title: "Database Query Optimization + Tuning",
+    title: "Query Planning + Optimization",
     image: "database-1024x703.webp",
     description: `
     I have a strong understanding of relational and NoSQL database architectures, allowing me to design scalable, high-performance, and fault-tolerant data solutions. I am proficient in SQL, optimizing queries for efficiency and reducing latency in high-traffic applications. I can structure databases using indexes, partitioning, caching strategies, and normalization techniques, ensuring optimal read and write performance.
