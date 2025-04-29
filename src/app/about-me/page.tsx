@@ -9,10 +9,17 @@ const page = () => {
         <div className="hidden sm:flex w-full max-w-[92.5vw] border border-black/25 bg-white/80 p-2.5 flex-col rounded-md text-xs">
           <p>Hi, I'm Matthew.</p>
           <p className="mt-2.5">
-            Based in Boston, MA, I'm a serverless developer passionate about
-            learning, problem-solving, and building efficient systems. I'm 4x
-            AWS certified and have hands-on experience in software development,
-            cloud infrastructure, data analysis, and DevOps.
+            Based in Boston, MA, I'm a Solutions Architect Professional
+            passionate about learning, problem-solving, and building efficient,
+            scalable systems. I'm 4x AWS certified, including AWS Certified
+            Solutions Architect – Professional, with hands-on experience across
+            AWS, Azure, and on-premises environments. My technical skills
+            include full-stack development (JavaScript, TypeScript, React,
+            Next.js, and Python), serverless architecture with AWS Lambda,
+            hybrid cloud networking, Infrastructure as Code (CloudFormation and
+            AWS SAM), containerization with Docker, relational and NoSQL
+            databases (PostgreSQL, DynamoDB, MongoDB), GraphQL integration,
+            systems design, and cloud-native modernization.
           </p>
           <p className="mt-2.5">
             Due to immense family and financial challenges, I made the difficult
@@ -92,7 +99,7 @@ const page = () => {
           <div className="flex sm:hidden w-full max-w-[92.5vw] border border-black/25 bg-white/75 p-2.5 flex-col rounded-md text-xs">
             <p>Hi, I'm Matthew.</p>
             <p className="mt-2.5">
-              Based in Boston, MA, I'm a Cloud and Solutions Architect
+              Based in Boston, MA, I'm a Solutions Architect Professional
               passionate about learning, problem-solving, and building
               efficient, scalable systems. I'm 4x AWS certified, including AWS
               Certified Solutions Architect – Professional, with hands-on
