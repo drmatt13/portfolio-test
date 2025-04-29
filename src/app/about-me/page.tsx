@@ -135,7 +135,7 @@ const page = () => {
           <div>
             <img
               onClick={() => {
-                window.open("/about-me/resume_v4.pdf", "_blank");
+                window.open("/about-me/resume_v5.pdf", "_blank");
               }}
               className="select-none h-full w-full object-cover border border-black/25 rounded-md cursor-pointer"
               src="/about-me/resume.png"
