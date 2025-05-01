@@ -11,15 +11,13 @@ const page = () => {
           <p className="mt-2.5">
             Based in Boston, MA, I'm a Solutions Architect Professional
             passionate about learning, problem-solving, and building efficient,
-            scalable systems. I'm 4x AWS certified, including AWS Certified
+            scalable systems. I'm 4x AWS certified, including the AWS Certified
             Solutions Architect – Professional, with hands-on experience across
             AWS, Azure, and on-premises environments. My technical skills
-            include full-stack development (JavaScript, TypeScript, React,
-            Next.js, and Python), serverless architecture with AWS Lambda,
-            hybrid cloud networking, Infrastructure as Code (CloudFormation and
-            AWS SAM), containerization with Docker, relational and NoSQL
-            databases (PostgreSQL, DynamoDB, MongoDB), GraphQL integration,
-            systems design, and cloud-native modernization.
+            include full-stack development, serverless architecture with AWS
+            Lambda, hybrid cloud networking, Infrastructure as Code,
+            containerization with Docker, relational and NoSQL databases,
+            GraphQL integration, systems design, and cloud-native modernization.
           </p>
           <p className="mt-2.5">
             Due to immense family and financial challenges, I made the difficult
