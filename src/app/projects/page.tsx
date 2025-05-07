@@ -4,17 +4,11 @@ const page = () => {
   return (
     <div className="flex flex-col justify-center items-center ">
       <ProjectItem
-        title="AWS SAM WebSocket Development Kit"
-        description="The AWS SAM WebSocket Development Kit is a local testing framework for AWS WebSocket API Gateway integrations using AWS SAM. Since AWS SAM lacks built-in WebSocket testing tools, this project provides a local WebSocket server that mimics API Gateway behavior, enabling real-time execution of Lambda functions without deployment. It ensures seamless synchronization between local and live environments, streamlining the development and debugging process. A built-in frontend tester allows developers to validate WebSocket messages across both local and deployed AWS environments, making WebSocket API development more efficient and iterative."
-        image="sam-websocket-dev-kit.png"
-        url="https://github.com/drmatt13/sam-websocket-dev-kit"
-        firstOfType={true}
-      />
-      <ProjectItem
         title="Tiered API Access Manager"
-        description="The Tiered API Access Manager is a fully automated Infrastructure as Code (IaC) solution for managing API subscriptions and access tiers, deployed to AWS via a CloudFormation-based stack. Built with the AWS SAM framework, it utilizes API Gateway, Lambda, DynamoDB, and an ALB-backed Auto Scaling Group to facilitate dynamic request handling and adaptive scaling. The system enforces tiered API access with rate limiting, automated billing, and real-time monitoring. A React-based front end streamlines API key management, while AWS Cognito provides secure authentication. Designed for scalability and efficiency, this project empowers businesses to monetize APIs while ensuring security and operational flexibility."
+        description="The Tiered API Access Manager is a fully automated Infrastructure as Code (IaC) solution for deploying, scaling, and monetizing user-provided API services. Built with AWS SAM and deployed via CloudFormation, it integrates API Gateway, Lambda, Cognito, and DynamoDB to enable secure authentication, tiered access control, and subscription-based billing. Usage plans with built-in throttling and metering enforce rate limits, while billing data and access logs are stored in DynamoDB. Asynchronous workflows are orchestrated using SNS, SQS, EventBridge, and DynamoDB Streams to support scalable, event-driven processing. A React-based management dashboard, hosted on S3 and distributed via CloudFront, offers a user-friendly API key administration and usage monitoring interface. This project showcases how to effectively productize APIs with automation, scalability, and security at its core."
         image="APIkeyThumbnail.png"
         url="https://api-limit-throttler.vercel.app"
+        firstOfType={true}
       />
       <ProjectItem
         title="AWS Prerequisite Knowledge Guide"
@@ -41,15 +35,21 @@ const page = () => {
 
       <ProjectItem
         title="GlobalChat"
-        description="GlobalChat is a real-time web application showcasing interactive UI development, real-time data handling, and efficient state management using React and Socket.io. It features global and private messaging, live notifications, and media sharing, all structured within a modular component-based architecture. While the single-server design centralizes connection management, making it less scalable for high traffic, the project serves as a strong reference for my ability to build complex event-driven frontends. The front and back end are containerized and orchestrated via Docker Compose for local development or AWS deployment. An EC2 user data script automates provisioning by cloning the repository, dynamically configuring environment variables based on instance metadata, and executing docker-compose up to deploy the stack on AWS. This setup ensures environment consistency, enabling seamless execution both locally and in the cloud."
+        description="GlobalChat is a WebSocket-based real-time chat platform that emphasizes interactive UI development, efficient state management, and scalable event-driven communication. Built with a responsive React front end and a custom Socket.IO server, it supports global and private messaging, live notifications, media sharing, session-aware logic, user presence tracking, and reconnection handling—all organized within a modular, component-based architecture. Both frontend and backend services are containerized and orchestrated with Docker Compose for streamlined local development and cloud deployment. An AWS EC2 user data script automates provisioning by cloning the repository, injecting instance metadata into environment variables, and launching the application with docker-compose up. While the single-server design simplifies connection management, it also acts as a hands-on demonstration of real-time system architecture, infrastructure automation, and full-stack application delivery across environments."
         image="cropped-globalchatdark.png"
         url="https://global-chat-docs.vercel.app"
       />
       <ProjectItem
-        title="Massachusetts Code Violations Reporter"
-        description="Massachusetts Code Violations Reporter is a tech demo showcasing GIS integration, real-time mapping, and interactive parcel selection. Built with Leaflet for tile-based rendering, it enables users to search for properties or click on the map to retrieve tax parcel data via public APIs, precisely identifying land parcels and structures. Users can specify properties such as apartment units, commercial buildings, and multi-use developments to report potential violations, including unsafe conditions, zoning infractions, or illegal construction. This project demonstrates my experience in spatial data processing, interactive mapping, and leveraging public GIS datasets for real-time property analysis."
-        image="code-violations-reporter.png"
-        url="https://massachusetts-code-violations-reporter.vercel.app/"
+        title="AWS SAM WebSocket Development Kit"
+        description="The AWS SAM WebSocket Development Kit is a local testing framework for AWS WebSocket API Gateway integrations using AWS SAM. Since AWS SAM lacks built-in WebSocket testing tools, this project provides a local WebSocket server that mimics API Gateway behavior, enabling real-time execution of Lambda functions without deployment. It ensures seamless synchronization between local and live environments, streamlining the development and debugging process. A built-in frontend tester allows developers to validate WebSocket messages across both local and deployed AWS environments, making WebSocket API development more efficient and iterative."
+        image="sam-websocket-dev-kit.png"
+        url="https://github.com/drmatt13/sam-websocket-dev-kit"
+      />
+      <ProjectItem
+        title="Caching Smarter with Next.js - ISG + SWR + Server Actions"
+        description="A video walkthrough demonstrating how Incremental Static Generation, SWR, and Server Actions work together in Next.js 15. I explain how these features handle caching, pagination, and revalidation in practice—no code walkthroughs, just real behavior in action."
+        image="next-demo.png"
+        url="https://www.youtube.com/watch?v=rn_wi2JZi8s"
       />
       <ProjectItem
         title="Tailwind UI Design Example"
@@ -57,9 +57,16 @@ const page = () => {
         image="ui.png"
         url="https://ui-design-drmatt13.vercel.app"
       />
+
+      <ProjectItem
+        title="Massachusetts Code Violations Reporter"
+        description="Massachusetts Code Violations Reporter is a tech demo showcasing GIS integration, real-time mapping, and interactive parcel selection. Built with Leaflet for tile-based rendering, it enables users to search for properties or click on the map to retrieve tax parcel data via public APIs, precisely identifying land parcels and structures. Users can specify properties such as apartment units, commercial buildings, and multi-use developments to report potential violations, including unsafe conditions, zoning infractions, or illegal construction. This project demonstrates my experience in spatial data processing, interactive mapping, and leveraging public GIS datasets for real-time property analysis."
+        image="code-violations-reporter.png"
+        url="https://massachusetts-code-violations-reporter.vercel.app/"
+      />
       <ProjectItem
         title="Visual Algorithms"
-        description="Visual Algorithms is a collection of interactive algorithm visualizations created to showcase my ability to build intuitive, UI-driven tools for exploring classic algorithms. The project includes searches like Breadth-First Search and Graph Search, sorting algorithms like Insertion Sort, and practical tools like a Loan Calculator and Island Counter. While focusing on presenting the results and outputs of these algorithms engagingly—such as visualizing loan amortization with graphs or counting islands on a grid—the project doesn’t break down the underlying mechanics in depth. Instead, it emphasizes making these concepts more interactive and accessible. This project is still a work in progress, and I plan to continue developing it when I have time."
+        description="Visual Algorithms is a collection of interactive algorithm visualizations created to showcase my ability to build intuitive, UI-driven tools for exploring classic algorithms. The project includes searches like Breadth-First Search and Graph Search, sorting algorithms like Insertion Sort, and practical tools like a Loan Calculator and Island Counter. While focusing on presenting the results and outputs of these algorithms engagingly—such as visualizing loan amortization with graphs or counting islands on a grid—the project doesn’t break down the underlying mechanics in depth. Instead, it emphasizes making these concepts more interactive and accessible."
         image="algorithms.png"
         url="https://example-visual-algorithms.vercel.app"
       />
