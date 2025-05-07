@@ -70,7 +70,7 @@ const page = () => {
         image="algorithms.png"
         url="https://example-visual-algorithms.vercel.app"
       />
-      <ProjectItem
+      {/* <ProjectItem
         title="Agile Enterprise Operations"
         description="
 Agile Enterprise Operations is an in-depth exploration of organizational structure, DevOps methodologies, and CI/CD dynamics within modern software development. This project examines the seamless integration of development and operations, starting from client expectations to the implementation of sophisticated workflows. It not only outlines the theoretical framework of Agile teams but also delves into practical applications, such as development environments, version control, and CI/CD pipelines. By analyzing how these pipelines are managed and monitored, this project highlights both the technical and strategic competencies required to navigate complex software deployments. Through this approach, it demonstrates a comprehensive understanding of Agile enterprise operations, reinforcing the ability to implement and oversee scalable, high-performing software solutions in real-world environments."
@@ -113,7 +113,7 @@ Agile Enterprise Operations is an in-depth exploration of organizational structu
   This website was a design challenge project from devchallenges.io which tasked me with creating an application allows users to upload a single image at a time, supporting JPG, PNG, and GIF formats with a maximum file size of 2MB. Users can either drag and drop an image or manually browse and select a file for upload. During the upload process, a progress indicator provides real-time feedback, ensuring a smooth user experience. Once the upload is complete, users can preview the image, copy its URL for sharing, or download it directly. Additionally, the application includes a light and dark theme toggle for improved accessibility and customization. Prioritizing usability and clean UI/UX, this project delivers a responsive and efficient image handling solution. The final implementation is deployed with both a repository and a live demo available for review."
         image="bluetiles.jpg"
         decommissioned={true}
-      />
+      /> */}
     </div>
   );
 };
