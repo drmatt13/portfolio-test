@@ -10,11 +10,11 @@ const page = () => {
           <p className="">
             Hi, I’m Matthew — a Boston-based Solutions Architect Professional
             passionate about solving problems and building scalable, efficient
-            systems. I hold four AWS certifications, including the Solutions
-            Architect – Professional, and have hands-on experience across AWS,
-            Azure, and hybrid on-prem environments. My skill set spans
-            serverless architecture, full-stack development, infrastructure as
-            code, containerization, cloud networking, and systems design.{" "}
+            systems. I hold four AWS certifications and have hands-on experience
+            across AWS, Azure, and hybrid on-prem environments. My skill set
+            spans serverless architecture, full-stack development,
+            infrastructure as code, containerization, cloud networking, and
+            systems design.{" "}
           </p>
           <p className="mt-2.5">
             After leaving university due to family and financial challenges, I
