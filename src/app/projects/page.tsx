@@ -57,19 +57,19 @@ const page = () => {
         image="ui.png"
         url="https://ui-design-drmatt13.vercel.app"
       />
-
-      <ProjectItem
-        title="Massachusetts Code Violations Reporter"
-        description="Massachusetts Code Violations Reporter is a tech demo showcasing GIS integration, real-time mapping, and interactive parcel selection. Built with Leaflet for tile-based rendering, it enables users to search for properties or click on the map to retrieve tax parcel data via public APIs, precisely identifying land parcels and structures. Users can specify properties such as apartment units, commercial buildings, and multi-use developments to report potential violations, including unsafe conditions, zoning infractions, or illegal construction. This project demonstrates my experience in spatial data processing, interactive mapping, and leveraging public GIS datasets for real-time property analysis."
-        image="code-violations-reporter.png"
-        url="https://massachusetts-code-violations-reporter.vercel.app/"
-      />
       <ProjectItem
         title="Visual Algorithms"
         description="Visual Algorithms is a collection of interactive algorithm visualizations created to showcase my ability to build intuitive, UI-driven tools for exploring classic algorithms. The project includes searches like Breadth-First Search and Graph Search, sorting algorithms like Insertion Sort, and practical tools like a Loan Calculator and Island Counter. While focusing on presenting the results and outputs of these algorithms engagingly—such as visualizing loan amortization with graphs or counting islands on a grid—the project doesn’t break down the underlying mechanics in depth. Instead, it emphasizes making these concepts more interactive and accessible."
         image="algorithms.png"
         url="https://example-visual-algorithms.vercel.app"
       />
+      <ProjectItem
+        title="Massachusetts Code Violations Reporter"
+        description="Massachusetts Code Violations Reporter is a tech demo showcasing GIS integration, real-time mapping, and interactive parcel selection. Built with Leaflet for tile-based rendering, it enables users to search for properties or click on the map to retrieve tax parcel data via public APIs, precisely identifying land parcels and structures. Users can specify properties such as apartment units, commercial buildings, and multi-use developments to report potential violations, including unsafe conditions, zoning infractions, or illegal construction. This project demonstrates my experience in spatial data processing, interactive mapping, and leveraging public GIS datasets for real-time property analysis."
+        image="code-violations-reporter.png"
+        url="https://massachusetts-code-violations-reporter.vercel.app/"
+      />
+
       {/* <ProjectItem
         title="Agile Enterprise Operations"
         description="
