@@ -13,18 +13,25 @@ const page = () => {
         {skillData.map((item) => (
           <div
             key={item.title}
-            className="border border-black/25 aspect-video overflow-hidden shadow rounded-sm /cursor-pointer select-none"
+            className={`${
+              item.blackBackground && "bg-black"
+            } border border-black/25 aspect-video overflow-hidden shadow rounded-sm /cursor-pointer select-none flex justify-center items-center /relative group`}
             data-tooltip-id={item.title}
             data-tooltip-content={item.title}
           >
             <Image
-              className="object-cover h-full"
+              className={`${item.style} ${
+                item.objectCover ? "object-cover" : "object-contain"
+              } h-full`}
               src={`/skills/${item.image}`}
               alt={item.image}
               width={600}
-              height={300}
+              height={338} // or 338 if you need an integer
               // layout="responsive"
               draggable="false"
+              style={{
+                scale: item.scale,
+              }}
             />
 
             <Tooltip id={item.title} />

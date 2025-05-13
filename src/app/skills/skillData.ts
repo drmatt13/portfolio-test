@@ -4,7 +4,9 @@ export default [
     image: "471317884_583673027956406_5257598686831242351_n.jpg",
     description:
       "I earned a Bachelor of Science in Data Analytics from Southern New Hampshire University, graduating with a 3.5 GPA. Through my studies, I developed expertise in statistical analysis, data mining, data visualization, and predictive modeling, applying these skills to solve real-world problems. I learned how to analyze complex datasets, uncover patterns, and transform raw data into actionable insights that drive business decisions. Beyond technical skills, I gained a strong analytical mindset, allowing me to approach problems systematically and communicate findings effectively through reports, dashboards, and visualizations.",
-    objectCover: true,
+    // objectCover: true,
+    style: "",
+    scale: 1.06,
   },
   {
     title: "4x AWS Certified",
@@ -13,6 +15,7 @@ export default [
     
     I have extensive experience with Infrastructure as Code (IaC) using CloudFormation, AWS SAM, and CDK to automate deployments efficiently. I can implement event-driven architectures using Lambda, SNS, SQS, EventBridge, and Step Functions, facilitating scalable serverless and microservices-based solutions. My expertise extends to CI/CD pipelines using CodePipeline, CodeBuild, and CodeDeploy, as well as monitoring and operations with CloudWatch, X-Ray, AWS Config, and Systems Manager. Whether designing multi-region failover strategies, optimizing caching with CloudFront and ElastiCache, or securing workloads with AWS WAF and Shield, I can build resilient, secure, and production-ready AWS environments that align with industry best practices.
     `,
+    scale: 1.025,
   },
 
   {
@@ -20,12 +23,14 @@ export default [
     image: "network-diagram-example.png",
     description:
       "Amazon Web Services (AWS) is a popular cloud computing platform that provides a wide range of services for building and deploying applications. With my expertise in AWS, I can help you build scalable and secure cloud-based applications that improve the performance of your web applications.",
+    scale: 1.1,
   },
   {
     title: "Systems Design",
     image: "API Access Rate Architect Full-Stack IaC - fix.drawio.png",
     description:
       "Amazon Web Services (AWS) is a popular cloud computing platform that provides a wide range of services for building and deploying applications. With my expertise in AWS, I can help you build scalable and secure cloud-based applications that improve the performance of your web applications.",
+    scale: 1.05,
   },
 
   {
@@ -37,7 +42,7 @@ export default [
 I have experience working with Amazon RDS, designing multi-region failover strategies, cross-region replication, and high-availability configurations to ensure fault tolerance and disaster recovery. Additionally, I can work with MongoDB and DynamoDB, understanding when to choose relational vs. NoSQL solutions based on data access patterns, scalability requirements, and consistency models. Whether designing OLTP or OLAP systems, optimizing complex queries, or tuning database performance, I can ensure efficient, resilient, and well-architected data solutions for a variety of workloads.
 
     `,
-    // objectCover: true,
+    scale: 1.25,
   },
 
   {
@@ -57,7 +62,9 @@ I excel at problem-solving, breaking down challenges into manageable components,
     
     I can configure network settings through files like /etc/resolv.conf, /etc/hosts, and /etc/network/interfaces, ensuring proper DNS resolution and connectivity. I can work with package managers like apt, yum, and dnf for software installation and maintenance. My expertise includes file system management, disk partitioning, and system monitoring, allowing me to diagnose and resolve performance issues. I can also analyze kernel processes, resource allocation, and system logs to troubleshoot failures and optimize operations. Whether managing access controls, fine-tuning system performance, or supporting workloads on AWS EC2, I can ensure secure, stable, and efficient Linux environments.
     `,
-    objectCover: true,
+    scale: 1.075,
+    blackBackground: true,
+    // objectCover: true,
   },
 
   {
@@ -68,7 +75,8 @@ I excel at problem-solving, breaking down challenges into manageable components,
 
 I excel at code refactoring and simplification, transforming deeply nested and convoluted logic into modular, maintainable, and reusable abstractions. I am skilled in tree shaking, dead code elimination, and module bundling, all of which enhance performance in modern JavaScript ecosystems. My experience encompasses both object-oriented and functional programming paradigms, leveraging ES6+ classes, TypeScript’s advanced type system, and declarative programming patterns to create robust and scalable solutions. Whether I am architecting large-scale applications, optimizing rendering performance in React, or streamlining complex asynchronous workflows, I apply my deep technical expertise and best practices to ensure clean, efficient, and future-proof code.
 `,
-    objectCover: true,
+    // objectCover: true,
+    scale: 1.055,
   },
 
   {
@@ -81,6 +89,7 @@ I have experience working with Amazon RDS, designing multi-region failover strat
 
     `,
     // objectCover: true,
+    scale: 1.01,
   },
 
   {
@@ -90,7 +99,8 @@ I have experience working with Amazon RDS, designing multi-region failover strat
     
     My experience includes managing containerized workloads, implementing best practices for deployment, scaling, and maintaining reliable environments. I have a strong understanding of microservices architecture, ensuring services remain loosely coupled, resilient, and easily scalable. Whether setting up development environments, deploying microservices, or optimizing container performance, I can build and maintain efficient, scalable, and production-ready containerized systems that align with industry standards.
     `,
-    objectCover: true,
+    // objectCover: true,'
+    scale: 1.01,
   },
 
   {
@@ -99,7 +109,7 @@ I have experience working with Amazon RDS, designing multi-region failover strat
     description: `I have a strong understanding of data structures and algorithms, enabling me to write efficient, scalable, and optimized code for a wide range of applications. I can analyze time and space complexity to ensure performance efficiency, selecting the right data structures—such as arrays, linked lists, hash tables, trees, graphs, and heaps—to best fit the problem at hand.
 
 I can implement and optimize sorting, searching, graph traversal, and dynamic programming algorithms, ensuring efficient solutions to complex problems. Whether optimizing database queries, designing caching mechanisms, improving load balancing strategies, or structuring data for high-performance applications, I apply algorithmic thinking to enhance performance, reduce computational overhead, and scale systems effectively. My knowledge of recursion, memoization, and concurrency allows me to solve real-world challenges in software development, system design, and large-scale computing.`,
-    objectCover: true,
+    // objectCover: true,
   },
   {
     title: "TypeScript",
@@ -107,6 +117,7 @@ I can implement and optimize sorting, searching, graph traversal, and dynamic pr
     description:
       "Next.js is a popular React framework that allows for server-side rendering and other advanced features. As a Next.js developer, I can create fast, SEO-friendly, and scalable web applications that meet your business needs.",
     // objectCover: true,
+    scale: 1.025,
   },
 
   {
@@ -115,6 +126,7 @@ I can implement and optimize sorting, searching, graph traversal, and dynamic pr
     description:
       "React is a popular JavaScript library for building user interfaces. As a React specialist, I can create dynamic and interactive front-end interfaces that enhance user experience and engagement.",
     // objectCover: true,
+    scale: 1.01,
   },
   {
     title: "Next.js",
@@ -122,6 +134,7 @@ I can implement and optimize sorting, searching, graph traversal, and dynamic pr
     description:
       "Next.js is a popular React framework that allows for server-side rendering and other advanced features. As a Next.js developer, I can create fast, SEO-friendly, and scalable web applications that meet your business needs.",
     // objectCover: true,
+    scale: 1.05,
   },
   {
     title: "Tailwind CSS",
@@ -131,7 +144,8 @@ I can implement and optimize sorting, searching, graph traversal, and dynamic pr
 
 I can optimize styling workflows by using variants, custom themes, and configuration overrides in tailwind.config.js, ensuring design consistency and reusability across projects. I also have experience integrating Tailwind CSS with modern frameworks like React and Next.js, taking advantage of dark mode support, animations, and component-driven styling to streamline development. Whether building complex UI components, optimizing for performance, or maintaining a scalable design system, I can effectively utilize Tailwind CSS to enhance both development speed and front-end maintainability.
       `,
-    objectCover: true,
+    // objectCover: true,
+    scale: 1.25,
   },
 
   {
@@ -140,9 +154,34 @@ I can optimize styling workflows by using variants, custom themes, and configura
     description: `As a full-stack developer and UX/UI designer, I understand the importance of creating visually appealing, functional, and user-friendly interfaces that enhance the user experience. I take a user-centric approach, focusing on accessibility, usability, and intuitive navigation to ensure a seamless interaction between users and applications. I specialize in mobile-first design, ensuring that applications adapt fluidly across different screen sizes with optimized layouts that maintain performance and usability across desktops, tablets, and mobile devices.
 
 I design with scalability and responsiveness in mind, utilizing flexible grid systems, fluid typography, and adaptive spacing to create layouts that remain consistent and dynamic under various resolutions and orientations. I also pay close attention to layout shifts, interaction patterns, and performance optimizations, ensuring a smooth, interruption-free user experience. Whether it’s crafting design systems, refining micro-interactions, or implementing accessible UI components, I can create modern, engaging, and highly responsive interfaces that enhance usability without compromising performance.`,
-    objectCover: true,
+    // objectCover: true,
+    scale: 1.125,
   },
 
+  {
+    title: "Active Directory",
+    image: "hero_activedirectory.png",
+    description: ``,
+    scale: 1.5,
+  },
+  {
+    title: "Angular",
+    image: "angular-feature-image-1.png",
+    description: ``,
+    scale: 1.45,
+  },
+  {
+    title: "Java",
+    image: "java-black-1920x1080-16069.png",
+    description: ``,
+    scale: 1.025,
+  },
+  {
+    title: "Prisma ORM",
+    image: "1703380012682.png",
+    objectCover: true,
+    description: ``,
+  },
   {
     title: "Authentication & Authorization",
     image: "auth.png",
@@ -153,7 +192,8 @@ I am proficient in integrating third-party identity providers using OAuth 2.0, O
 Beyond authentication, I have an in-depth understanding of authorization mechanisms, including RBAC (Role-Based Access Control), ABAC (Attribute-Based Access Control), and fine-grained permission models to enforce least privilege access across applications and infrastructure.
 
 I am highly proficient in encryption strategies, including symmetric (AES) and asymmetric (RSA, ECC) encryption, secure key exchange protocols, and TLS handshake processes. I understand how TLS certificates, PKI, HMAC, and digital signatures contribute to data security, ensuring secure communication over untrusted networks. Whether implementing zero-trust architectures, securing API endpoints, or encrypting sensitive data at rest and in transit, I can architect secure, scalable, and compliant security solutions that align with industry best practices.`,
-    objectCover: true,
+    // objectCover: true,
+    scale: 1.075,
   },
 
   {
@@ -164,6 +204,7 @@ I am highly proficient in encryption strategies, including symmetric (AES) and a
     I can configure network settings through files like /etc/resolv.conf, /etc/hosts, and /etc/network/interfaces, ensuring proper DNS resolution and connectivity. I can work with package managers like apt, yum, and dnf for software installation and maintenance. My expertise includes file system management, disk partitioning, and system monitoring, allowing me to diagnose and resolve performance issues. I can also analyze kernel processes, resource allocation, and system logs to troubleshoot failures and optimize operations. Whether managing access controls, fine-tuning system performance, or supporting workloads on AWS EC2, I can ensure secure, stable, and efficient Linux environments.
     `,
     // objectCover: true,
+    scale: 1.075,
   },
   {
     title: "Query Planning + Optimization",
@@ -175,6 +216,7 @@ I have experience working with Amazon RDS, designing multi-region failover strat
 
     `,
     // objectCover: true,
+    scale: 1.25,
   },
   {
     title: "CI/CD & DevOps",
@@ -183,5 +225,6 @@ I have experience working with Amazon RDS, designing multi-region failover strat
 
 I follow DevOps best practices, leveraging Infrastructure as Code (IaC) with AWS CloudFormation, AWS SAM, and CDK to ensure reproducibility and scalability in cloud environments. I am proficient in containerized deployment strategies, integrating Docker, Kubernetes, and serverless architectures into CI/CD pipelines to enable automated rollouts, blue-green deployments, and canary releases. Whether orchestrating multi-environment workflows, implementing security scans, or optimizing deployment frequency, I can build robust, scalable, and highly automated DevOps solutions that align with industry best practices.`,
     // objectCover: true,
+    scale: 1.065,
   },
 ];
